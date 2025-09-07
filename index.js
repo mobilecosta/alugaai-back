@@ -17,7 +17,7 @@ const authRoutes = require("./Routes/RoutesAuth");
 const pagamentosRoutes = require("./Routes/RoutesPagamentos");
 const port = process.env.APP_PORT;
 
-app.use(cors({ origin: "https://allesonsales.github.io", credentials: true }));
+app.use(cors({ origin: "http://localhost", credentials: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
